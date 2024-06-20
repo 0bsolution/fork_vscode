@@ -50,8 +50,7 @@ export class HoverRangeAnchor {
 		public readonly range: Range,
 		public readonly initialMousePosX: number | undefined,
 		public readonly initialMousePosY: number | undefined,
-	) {
-	}
+	) {}
 	public equals(other: HoverAnchor) {
 		return (other.type === HoverAnchorType.Range && this.range.equalsRange(other.range));
 	}
@@ -69,8 +68,7 @@ export class HoverForeignElementAnchor {
 		public readonly initialMousePosX: number | undefined,
 		public readonly initialMousePosY: number | undefined,
 		public readonly supportsMarkerHover: boolean | undefined
-	) {
-	}
+	) {}
 	public equals(other: HoverAnchor) {
 		return (other.type === HoverAnchorType.ForeignElement && this.owner === other.owner);
 	}
